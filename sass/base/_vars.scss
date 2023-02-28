@@ -1,7 +1,7 @@
 :root {
   --container-padding: 15px;
   --slider-width: 950px;
-  --slider-height: calc(--slider-width * 0.75);
+  --slider-height: calc(var(--slider-width) * 0.75);
   --main-color: #2C2C2C;
   --accent--color: #042A5C;
   --link--hover: #194397;

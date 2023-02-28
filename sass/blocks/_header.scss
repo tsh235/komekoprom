@@ -4,7 +4,7 @@
   border-bottom: 2px solid var(--accent--color);
 }
 .header__container {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
 }

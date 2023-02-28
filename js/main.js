@@ -46,11 +46,13 @@ window.onload = function() {
   const navIcon = document.querySelector('.nav-icon');
   const mobileMenu = document.querySelector('.mobile-menu');
   const bodyNoscroll = document.body;
+  const burgerSpan = document.querySelector('.nav-icon-wrap__text');
 
   navIcon.addEventListener('click', function () {
     this.classList.toggle('nav-icon--active');
     mobileMenu.classList.toggle('mobile-menu--active');
     bodyNoscroll.classList.toggle('noscroll');
+    burgerSpan.classList.toggle('none');
   });
 
   const mobileNavLinks = document.querySelectorAll('.mobile-menu__item a');
