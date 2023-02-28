@@ -1,0 +1,48 @@
+.text {
+  overflow-y: auto;
+  width: 97%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 1.5;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  > p + p {
+    margin-top: 15px;
+  }
+}
+.text__paragraph {
+  margin-bottom: 5px;
+}
+.text__list {
+  margin-bottom: 15px;
+  padding-left: 25px;
+  list-style-type: disc;
+}
+.text__sublist {
+  padding-left: 5px;
+}
+.text__sublist.text__sublist--one {
+  margin-bottom: 15px;
+  padding-left: 30px;
+}
+.text__sublist-item {
+  position: relative;
+  padding-left: 20px;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='10' height='1' viewBox='0 0 10 1' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cline y1='0.5' x2='10' y2='0.5' stroke='%232C2C2C'/%3e%3c/svg%3e ");
+    background-position: left;
+    background-repeat: no-repeat;
+  }
+}

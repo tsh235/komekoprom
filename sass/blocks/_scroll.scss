@@ -1,0 +1,15 @@
+.scrollbar-container {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	width: 6px;
+  background-color: var(--scroll-track);
+}
+.scrollbar {
+	position: absolute;
+	right: 0;
+	height: 30px;
+	width: 6px;
+	background: var(--scroll);
+}

@@ -1,0 +1,17 @@
+a.logo {
+  color: var(--accent--color);
+  text-transform: uppercase;
+  transition: 0.3s;
+  &:hover {
+    color: var(--link--hover);
+  }
+}
+.logo__top {
+  display: block;
+  font-size: 26px;
+}
+.logo__bottom {
+  display: block;
+  font-size: 54px;
+  letter-spacing: 0.1em;
+}

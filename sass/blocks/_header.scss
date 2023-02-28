@@ -1,0 +1,10 @@
+.header {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--accent--color);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

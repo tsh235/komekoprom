@@ -1,0 +1,75 @@
+html {
+	height: 100vh;
+	overflow: hidden;
+}
+body {
+	position: relative;
+	min-width: 320px;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-image: url(./../img/bg.webp);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Century Gothic', sans-serif;
+	font-size: 16px;
+	line-height: 1;
+	color: var(--main-color);
+	text-rendering: optimizeSpeed;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--body-bg-color);
+	}
+}
+.content-wrap {
+	position: relative;
+	z-index: 5;
+	max-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	> * {
+		flex-shrink: 0;
+	}
+}
+.container {
+	max-width: calc(100% - 100px);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.none {
+	display: none !important;
+}
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
+}
+.no-click {
+	cursor: default;
+	pointer-events: none;
+}
+.mobile-message {
+	display: none;
+	margin: 10px auto;
+	max-width: 70%;
+	font-size: 26px;
+	color: #9e0000;
+  text-align: center;
+}
+.fancybox-bg {
+  background: rgba(35, 42, 53, 1);
+}
+.fancybox-is-open .fancybox-bg {
+  opacity: .98;
+}

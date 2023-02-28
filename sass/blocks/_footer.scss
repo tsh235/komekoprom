@@ -1,0 +1,27 @@
+.footer {
+  margin-top: auto;
+  padding: 20px 0;
+  border-top: 2px solid var(--accent--color);
+  font-size: 18px;
+  line-height: 1.3;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__address {
+  max-width: 430px;
+  font-style: normal;
+}
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.footer__link {
+  display: inline-block;
+  transition: 0.3s;
+  &:hover {
+    color: var(--link--hover);
+  }
+}
