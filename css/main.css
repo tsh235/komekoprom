@@ -769,14 +769,6 @@ a.logo:hover {
     top: 7px;
   }
 
-  .mobile-menu__list {
-    font-size: 16px;
-  }
-
-  .mobile-menu__item + .mobile-menu__item {
-    margin-top: 15px;
-  }
-
   .content__title {
     padding-bottom: 15px;
     font-size: 20px;
@@ -802,6 +794,14 @@ a.logo:hover {
 
   .logo__bottom {
     font-size: 27px;
+  }
+
+  .mobile-menu__list {
+    font-size: 18px;
+  }
+
+  .mobile-menu__item + .mobile-menu__item {
+    margin-top: 20px;
   }
 }
 
